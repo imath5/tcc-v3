@@ -1,0 +1,120 @@
+:root {
+   --color-primary: #13293d;
+   --color-secondary:#e8f1f2;
+   --color-tertiary: #8b8b8b;
+   --color-header-footer: #191919;
+
+   }
+
+   * {
+      padding: 0px;
+      margin: 0px;
+      box-sizing: border-box;
+
+  }
+
+  .container {
+   padding: 20px;
+  }
+
+  h2 {
+   text-transform: uppercase;
+  }
+
+.appointment {
+    padding: 100px 0;
+    height: 100vh; 
+    background-color: var(--color-primary);
+    background-image: url(../images/chair-ic.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 300px;
+    
+}
+
+.appointment h2 {
+    text-align: center;
+    color: var(--color-tertiary);
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 10px;
+ }
+
+
+ .appointment .personal-data {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+ }
+
+ .appointment .input-wrapper {
+    justify-content: space-between;
+    margin-right: 50px;
+ }
+
+ .input-wrapper:nth-child(4) {
+   width: 300px;
+ }
+
+ .appointment .input-wrapper:last-of-type {
+  margin-right: 0;
+ }
+
+ .appointment  form {
+    margin-top: 80px;
+ }
+
+
+ .appointment label {
+    display: block;
+    color: var(--color-tertiary);
+    font-size: 14px;
+    margin-bottom: 2px;
+    
+ }
+
+ .appointment .personal-data input,
+ .appointment .personal-data select,
+ .appointment  textarea {
+    padding: 10px;
+    outline: none;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+ }
+ 
+ .appointment  textarea {
+   width: 70%;
+   height: 100px;
+ }
+
+ .appointment button {
+    background-color: var(--color-secondary);
+    padding: 15px 40px;
+    color: var(--color-tertiary);
+    border: none;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+ }
+
+ .btns {
+   display: flex;
+   justify-content: space-between;
+
+ }
+
+ .btns button:hover {
+   background-image: linear-gradient(to right, var(--color-tertiary), rgba(79, 79, 83, 0.281));
+   color: var(--color-secondary);
+ }
+
+
+ .storage, .dashboard {
+   background-color: var(--color-tertiary);
+   border: 5px solid var(--color-secondary);
+   padding: 20px;
+   margin:  30px 30px;
+   
+ }
+ 
