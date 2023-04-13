@@ -1,3 +1,11 @@
+:root {
+    --color-primary: #13293d;
+    --color-secondary:#e8f1f2;
+    --color-tertiary: #8b8b8b;
+    --color-header-footer: #191919;
+    }
+
+
 * {
     box-sizing: border-box;
     padding: 0px;
@@ -6,7 +14,7 @@
 }
 
 body {
-    background-color: #f0f0f0;
+    background-color: #13293d;
 
 }
 
@@ -16,7 +24,7 @@ h1 {
 
 .card {
     box-shadow: 1px 1px 5px #ccc;
-    background-color: white;
+    background-color: #e8f1f2;
     padding: 30px;
     border-radius: 5px;
 }
@@ -47,7 +55,7 @@ h1 {
 }
 
 .title {
-    color: #24207f;
+    color: #13293d;
 }
 
 .card-group>label {
@@ -58,25 +66,27 @@ h1 {
 
 .card-group>input {
     border-radius: 5px;
-    outline: 0;
     width: 100%;
     height: 25px;
     padding: 5px;
+    
+    
 }
 
 .card-group>button {
-    background-image: linear-gradient(to right, #24207f, rgb(78, 78, 221));
+    background-image: linear-gradient(to right, #004D69, rgb(78, 78, 221));
     border-radius: 30px;
     width: 100%;
-    color: #ccc;
+    color: var(--color-secondary);
     padding: 15px;
     border: 0px;
     outline: 0;
     margin-top: 5px;
+    cursor: pointer;
 }
 
 .btn button:hover {
-    background-image: linear-gradient(to right, #24207f, rgb(27, 27, 150));
+    background-image: linear-gradient(to right, #24207f, rgb(57, 57, 151));
 }
 
 .footer-container {
@@ -102,7 +112,7 @@ h1 {
 
 .footer-link a {
     text-decoration: none;
-    color: white;
+    color: #e8f1f2;
 }
 
 .footer-link a:hover {
@@ -114,7 +124,7 @@ h1 {
 }
 
 .footer-link .active {
-    color: #24207f;
+    color: #e8f1f2;
     text-decoration: none;
 }
 
@@ -122,3 +132,14 @@ h1 {
     display: table;
     margin: 0 auto;
 }
+
+.footer2 {
+    background-color: var(--color-header-footer);
+    color: var(--color-secondary);
+    text-align: center;
+    padding: 40px;
+    font-size: 12px;
+    width: 100%;
+    position:absolute;
+    bottom: 0;
+ }

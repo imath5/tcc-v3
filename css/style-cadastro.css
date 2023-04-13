@@ -1,3 +1,10 @@
+:root {
+    --color-primary: #13293d;
+    --color-secondary:#e8f1f2;
+    --color-tertiary: #8b8b8b;
+    --color-header-footer: #191919;
+    }
+    
 * {
     box-sizing: border-box;
     padding: 0px;
@@ -6,13 +13,13 @@
 }
 
 body {
-    background-color: #f0f0f0;
-    font-family: sans-serif;
+    background-color: #13293d;
+
 }
 
 .card {
     box-shadow: 1px 1px 5px #ccc;
-    background-color: white;
+    background-color: #e8f1f2;
     padding: 30px;
     border-radius: 5px;
 }
@@ -43,7 +50,7 @@ body {
 }
 
 .title {
-    color: #24207f;
+     color: #13293d;
 }
 
 .card-group>label {
@@ -61,7 +68,7 @@ body {
 }
 
 .card-group>button {
-    background-image: linear-gradient(to right, #24207f, rgb(78, 78, 221));
+    background-image: linear-gradient(to right, #004D69, rgb(78, 78, 221));
     border-radius: 30px;
     width: 100%;
     color: #ccc;
@@ -72,7 +79,7 @@ body {
 }
 
 .btn button:hover {
-    background-image: linear-gradient(to right, #24207f, rgb(27, 27, 150));
+    background-image: linear-gradient(to right, #24207f, rgb(57, 57, 151));
 }
 
 .footer-container {
@@ -98,7 +105,7 @@ body {
 
 .footer-link a {
     text-decoration: none;
-    color: white;
+    color: #e8f1f2;
 }
 
 .footer-link a:hover {
@@ -110,7 +117,7 @@ body {
 }
 
 .footer-link .active {
-    color: #24207f;
+    color: #e8f1f2;
     text-decoration: none;
 }
 
@@ -118,3 +125,14 @@ body {
     display: table;
     margin: 0 auto;
 }
+
+.footer2 {
+    background-color: var(--color-header-footer);
+    color: var(--color-secondary);
+    text-align: center;
+    padding: 40px;
+    font-size: 12px;
+    width: 100%;
+    position:absolute;
+    bottom: 0;
+ }

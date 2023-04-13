@@ -11,7 +11,6 @@
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
     overflow-x: hidden;
-
 }
 
 .homepage {
@@ -20,7 +19,6 @@
     background-color: var(--color-secondary);
    
 }
-
 
 .header-1 {
     display: flex;
@@ -37,16 +35,17 @@
 
 .logo{
     padding:10px;
-    color: white;
+    color: var(--color-secondary);
 }
 
 .header-1 .logo span:first-child {
     letter-spacing: -3px;
-    color:var(--color-primary);
+    color:#1d52ff;
     margin-left: 5px;
+    font-weight: bold;
 }
 
-.header-1 .logo span:last-child {
+ .header-1 .logo span:last-child {
     font-size: 12px;
     letter-spacing: normal;
   
@@ -70,16 +69,13 @@
     outline:none;  
 }
 
-.redes-sociais ul li {
+.users {
 
-    margin-left: 18px;
-    display: inline-block;
-    list-style: none;
+    color: var(--color-secondary);
 }
 
 .header-2 {
     padding-top: 40px;
-    
 }
 
 .header-2 .navbar{ 
@@ -93,13 +89,15 @@
     height: 50px;
 }
 
+
+
 .navbar ul li a:hover{
     color:var(--color-primary);
-    
+  
 }
 
 .navbar ul li:hover{
-border-bottom: 3px solid var(--color-primary);
+    border-bottom: 3px solid var(--color-primary);
 }
 
 /*li:nth-child(4) {
@@ -114,7 +112,40 @@ border-bottom: 3px solid var(--color-primary);
     padding: 10px;
 }
 
+ /*SUBMENU*/ 
 
+.submenu {
+    display:none;
+    color: var(--color-secondary);
+    position:absolute;
+    top: 56px;
+    left: 0;
+    background: #1d52ff;
+    min-width: 100%;
+    text-align:center;
+}
+
+
+.header-2 > li:hover > .submenu, .submenu > li:hover > .submenu {
+   background-color: red;
+}
+
+li {
+    text-decoration: none;
+}
+
+.submenu li:hover {
+    background: black;
+}
+
+.submenu li {
+    position: relative;
+}
+
+.submenu li .submenu {
+    top: 0;
+    left: 100%;
+}
 
 
 button.slick-prev {
@@ -148,7 +179,7 @@ button.slick-next {
 
 .slick-dots li button {
     background: transparent;
-    border: 2px solid #ffffff;
+    border: 2px solid var(--color-secondary);
     border-radius: 50%;
     font-size: 0px;
     cursor: pointer;
@@ -158,7 +189,7 @@ button.slick-next {
 
 
 li.slick-active button {
-    background: var(--color-tertiary);    
+    background: var(--color-tertiary);  
 }
 
 
@@ -194,19 +225,22 @@ li.slick-active button {
     overflow-y: hidden;
 }
 
-.about .timing {
+.about .timing {  
     width: 33%;
     padding: 20px;
-    position: relative;
     top: 10px;
-
+    position: relative;
+    top: -10px;
 }
 
 .about .timing .overlay {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.7);
     text-align: center;
-    padding: 60px 20px;
-    margin-left: 110px;
+    padding: 30px 20px;
+    padding-bottom: 150px;
+    margin-left: 110px;;
+
+    
 }
 
 .about .timing h3 {
@@ -215,16 +249,17 @@ li.slick-active button {
     width: fit-content;
     margin: 0 auto 30px auto;
     font-size: 30px;
+    
 }
 
 .about .timing .text h4 {
-    color: grey;
+    color: var(--color-tertiary);
     font-weight: 400;
     font-size: 15px;
 }
 
 .about .timing span {
-    color: white;
+    color: var(--color-secondary);
     font-size: 15px;
     display: block;
 }
@@ -238,7 +273,7 @@ li.slick-active button {
     font-size: 25px;
     display: block;
     margin-top: 10px;
-    color:white;  
+    color: var(--color-secondary);  
 }
 
 .about .timing .text:last-of-type:after {
@@ -247,7 +282,7 @@ li.slick-active button {
 
 .about .experience {
     width: 66%;
-    color:white;
+    color: var(--color-secondary);
     margin-left: 7%;
     margin-top: 100px;
     
@@ -277,35 +312,66 @@ li.slick-active button {
     margin-bottom: 20px;
     font-weight: 100;
     font-size: 17px;
+    width: 75%;
+    color: var(--color-secondary);
 }
 
 .btn {
     background-image: linear-gradient(to right, #004D69, rgb(78, 78, 221));
     border-radius: 30px;
     width: 10%;
-    color: #ccc;
+    color: var(--color-secondary);
     padding: 15px;
     border: 0px;
     outline: 0;
     margin-top: 5px;
+    cursor: pointer;
 
 }
 
 .btn:hover {
-    background-image: linear-gradient(to right, #24207f, rgb(27, 27, 150));
+    background-image: linear-gradient(to right, #24207f, rgb(57, 57, 151));
 }
 
 .slider-principal img {
     width: 20px;
 }
 
+.instructions {
+    position: absolute;
+    right: 10px;
+    background-color: var(--color-primary);
+    font-weight: bold;
+    padding: 20px;
+    margin-top: 200px;
+    margin-bottom: 10px;
+    
+ }
+
+ .btn-instructions {
+    float:right;
+    background-image: linear-gradient(to right, #004D69, rgb(78, 78, 221));
+    border-radius: 30px;
+    width: 30%;
+    color: var(--color-secondary);
+    padding: 15px;
+    border: 0px;
+    outline: 0;
+    margin-top: 30px;
+    cursor: pointer;
+    
+ }
+ 
+ .instructions button:hover {
+    background-image: linear-gradient(to right, #24207f, rgb(57, 57, 151));
+ }
+
   /***************
 * LOCATION - Localização
 ****************/
 
 .location {
-    padding: 100px 0;
-    width: 100%
+    background-color: var(--color-tertiary);
 }
 
 .location .head {
@@ -320,7 +386,7 @@ li.slick-active button {
 .location .head .info {
     display: flex;
     align-items: center;
-    width: 100%
+
 }
 
 .location .head .info .icon {
@@ -342,33 +408,34 @@ li.slick-active button {
 }
 
 .location .head .info .text span:first-child {
-    color: silver;
+    color: var(--color-tertiary);
 }
 
 .location .head .info .text span:last-child {
-    color: white;
+    color: var(--color-secondary);
 }
 
 .location .map {
     width: 100%;
-    align-items: center;
-
+    
 }
-
+.location .container-map {
+    padding: 100px;
+}
 .location .map iframe { 
     width: 100%;
+
 }
 
  /***************
 * FOOTER
 ****************/
 
-
 .footer {
     background-color: var(--color-header-footer);
-    color: white;
+    color: var(--color-secondary);
     text-align: center;
     padding: 40px;
     font-size: 12px;
-    width: 100%
+    width: 100%;
 }
