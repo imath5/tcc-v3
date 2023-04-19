@@ -67,7 +67,13 @@
 }
 
 .header-2 {
-    padding-top: 40px;
+    padding-top: 28px;
+    
+}
+
+.header-2 ul {
+  cursor: pointer;
+  color:var(--color-primary);
 }
 
 .header-2 .navbar{ 
@@ -84,23 +90,39 @@
 
 
 .navbar ul li a:hover{
-    color:var(--color-primary);
+  color:var(--color-primary);
   
 }
 
 .navbar ul li:hover{
-    border-bottom: 3px solid var(--color-primary);
+  border-bottom: 3px solid var(--color-primary);
+  color:var(--color-primary);
 }
+
+ .navbar  ul li button {
+  outline: none;
+  border: none;
+  background-color: white;
+  font-size: 18px;
+  color: #8b8b8b;
+  cursor: pointer;
+}
+
+.navbar ul li button:hover {
+  color:var(--color-primary);
+}
+
+
 
 /*li:nth-child(4) {
     pointer-events: none;
 }*/
 
+.navbar ul li,
 .navbar ul li a {
     color: var(--color-tertiary);
     text-decoration: none;
     font-size: 18px;
-    text-transform: uppercase;
     padding: 10px;
 }
  

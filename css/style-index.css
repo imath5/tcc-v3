@@ -11,6 +11,7 @@
     padding: 0px;
     margin: 0px; 
     font-family: 'Arial', sans-serif;
+    font-size: 15px;
 }
 
 body {
@@ -56,12 +57,14 @@ h1 {
 
 .title {
     color: #13293d;
+    font-size: 25px;
 }
 
 .card-group>label {
     width: 100%;
     color: rgb(75, 75, 75);
     display: block;
+    cursor: pointer;
 }
 
 .card-group>input {
@@ -78,15 +81,15 @@ h1 {
     border-radius: 30px;
     width: 100%;
     color: var(--color-secondary);
-    padding: 15px;
+    padding: 5px;
     border: 0px;
     outline: 0;
     margin-top: 5px;
     cursor: pointer;
 }
 
-.btn button:hover {
-    background-image: linear-gradient(to right, #24207f, rgb(57, 57, 151));
+.card-group .bold {
+    font-weight: bold;
 }
 
 .footer-container {
@@ -143,3 +146,40 @@ h1 {
     position:absolute;
     bottom: 0;
  }
+
+ #sendIndex,
+#btnCad {
+    background-color: var(--color-secondary);
+    padding: 15px 40px;
+    color: var(--color-tertiary);
+    border: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+    cursor: pointer;
+    width: 20%; 
+    box-shadow: 1px 1px 5px #ccc;
+    border-radius: 30px;
+}
+
+
+#sendIndex {
+    margin-bottom: 15px;
+}
+
+.btns {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#sendIndex:hover, #btnCad:hover {
+    background-color: var(--color-tertiary);
+    color: var(--color-secondary);
+}
+
+ .inputError {
+    border: 1px solid red;
+  }
+
+  .erro {
+    color: red;
+  }

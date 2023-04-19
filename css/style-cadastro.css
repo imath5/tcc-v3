@@ -10,6 +10,7 @@
     padding: 0px;
     margin: 0px; 
     font-family: 'Arial', sans-serif;
+    font-size: 15px;
 }
 
 body {
@@ -20,7 +21,7 @@ body {
 .card {
     box-shadow: 1px 1px 5px #ccc;
     background-color: #e8f1f2;
-    padding: 30px;
+    padding: 10px 30px;
     border-radius: 5px;
 }
 
@@ -51,6 +52,7 @@ body {
 
 .title {
      color: #13293d;
+     font-size: 25px;
 }
 
 .card-group>label {
@@ -58,6 +60,8 @@ body {
     color: rgb(75, 75, 75);
     display: block;
 }
+
+
 
 .card-group>input {
     border-radius: 5px;
@@ -67,19 +71,33 @@ body {
     padding: 5px;
 }
 
-.card-group>button {
-    background-image: linear-gradient(to right, #004D69, rgb(78, 78, 221));
+#sendCad,
+#btnLogin {
+    background-color: var(--color-secondary);
+    padding: 15px 40px;
+    color: var(--color-tertiary);
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    width: 20%; 
+    box-shadow: 1px 1px 5px #ccc;
     border-radius: 30px;
-    width: 100%;
-    color: #ccc;
-    padding: 15px;
-    border: 0px;
-    outline: 0;
-    margin-top: 5px;
 }
 
-.btn button:hover {
-    background-image: linear-gradient(to right, #24207f, rgb(57, 57, 151));
+
+#sendCad {
+    margin-bottom: 15px;
+}
+
+.btns {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#btnLogin:hover, #sendCad:hover {
+    background-color: var(--color-tertiary);
+    color: var(--color-secondary);
 }
 
 .footer-container {
@@ -136,3 +154,15 @@ body {
     position:absolute;
     bottom: 0;
  }
+
+ .card-group .bold {
+    font-weight: bold;
+}
+
+ .inputError {
+    border: 1px solid red;
+  }
+
+  .erro {
+    color: red;
+  }
